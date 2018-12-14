@@ -1,0 +1,25 @@
+.mdl{
+
+    &__header{
+
+        padding: 25px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 25px;
+        background: color(night);
+
+        &.is-blood{
+            background: color(blood);
+        }
+
+    }
+    &__body{
+        padding: 25px 20px;
+        margin-bottom: 20px;
+        background: color(night);
+        .disclaimer{
+            line-height: 1.4;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+
+@function dd( $name ){
+    @return $name+$breakpoint-separator;
+}
+
+@mixin ddScale( $className, $breakPointKey, $scaleKey){
+    .#{dd( $breakPointKey )}#{$className}-#{$scaleKey}{
+        @content;
+    }
+}

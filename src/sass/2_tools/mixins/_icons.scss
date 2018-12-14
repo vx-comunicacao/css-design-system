@@ -1,0 +1,59 @@
+
+@mixin fontawesome-icon {
+    font-family: FontAwesome;
+    font-style: initial;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin fontawesome-before($icon) {
+    @include fontawesome-icon();
+    content: $icon;
+    margin-right: 6px;
+}
+
+@mixin fa-ico($icon){
+    &:before{
+        @include fontawesome-before($icon);
+    }
+}
+
+// --------------------------------------------------------------------
+// ICONMOON
+// --------------------------------------------------------------------
+
+@mixin icomoon-base(){
+    // use !important to prevent issues with browser extensions that change fonts
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin icomoon($icon-name){
+    @extend .iconmoon;
+    @include icomoon-before($icon-name);
+}
+
+@mixin icomoon-before($icon-name){
+    &:before {
+        @include icomoon-before-content($icon-name);
+    }
+}
+
+@mixin icomoon-before-content($icon-name){
+    content: map-get($icons, $icon-name);
+}
+
+@mixin icomoon-full($icon-name){
+    @include icomoon-base();
+    @include icomoon-before-content($icon-name);
+}

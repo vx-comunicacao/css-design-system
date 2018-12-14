@@ -1,0 +1,39 @@
+
+// @import "../2_tools/mixins/image-replacement";
+
+.header{
+    padding: 18px 0;
+    position: relative;
+    background: color(night);
+    @media ( min-width: 768px ){
+        padding: 22px 0;
+    }
+}
+
+.logo-telecine-megapix{
+    width: 200px;
+    height: 36px;
+    margin: 0 auto 0 15px;
+    display:block;
+    @include image-replace("../images/logo-telecine-megapix.png");
+
+    @media ( min-width: 768px ){
+        margin: 0 auto;
+    }
+
+
+    @media ( min-width: 768px ){
+        width: 376px;
+        height: 66px;
+    }
+}
+
+.logo-shell{
+    width: 273px;
+    height: 62px;
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 0;
+    @include image-replace("../images/logo-shell.png");
+}

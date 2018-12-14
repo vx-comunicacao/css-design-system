@@ -1,0 +1,19 @@
+
+@mixin ff($item) { font-family: ff($item); }
+@mixin fs($item) { font-size: fs($item); }
+@mixin fw($item) { font-weight: fw($item); }
+
+@function ff( $color, $map : $font-family ){
+    $key: unquote($color);
+    @return map-get($map, $key);
+}
+
+@function fs( $color, $map : $font-size ){
+    $key: unquote($color);
+    @return map-get($map, $key);
+}
+
+@function fw( $color, $map : $font-weight ){
+    $key: unquote($color);
+    @return map-get($map, $key);
+}

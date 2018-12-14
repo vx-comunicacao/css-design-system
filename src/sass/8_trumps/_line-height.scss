@@ -1,0 +1,24 @@
+
+/* --------------------------------------------------------------- */
+/* LINE-HEIGHT */
+/* --------------------------------------------------------------- */
+
+@if($generate-class-line-height){
+
+  @each $key, $value in $line-height {
+    .lh-#{$key}{
+      line-height: $value;
+    }
+  }
+
+}
+
+@if($generate-class-line-height-breakpoints){
+  @each $key, $value in $line-height {
+    @include responsive('lh-'+$key){
+      line-height: $value;
+    }
+  }
+}
+
+

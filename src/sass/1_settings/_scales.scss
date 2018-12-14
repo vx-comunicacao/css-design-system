@@ -1,0 +1,181 @@
+
+// ------------------------------------------------------------
+// BERAKPOINTS
+// ------------------------------------------------------------
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 600px,
+    lg: 600px,
+);
+
+// ------------------------------------------------------------
+// COLORS
+// ------------------------------------------------------------
+
+$colors: (
+    _white: #fff,
+    primary: #0069d9,
+    danger: #dc3545,
+    success: #28a745,
+    clean:#f1f1f1,
+    red:  red,
+    blue: blue,
+);
+
+// ------------------------------------------------------------
+// SPACING
+// ------------------------------------------------------------
+
+$spacing: (
+    1: 1px,
+    2: 5px,
+    3: 10px,
+    4: 15px,
+    5: 20px,
+    6: 30px,
+);
+
+// ------------------------------------------------------------
+// VISIBILITY
+// ------------------------------------------------------------
+$visibility : (
+    visible  : visible,
+    invisible: hidden,
+);
+
+// ------------------------------------------------------------
+// BORDER
+// ------------------------------------------------------------
+
+// ------------------------------------------------------------
+// BORDER-RADIUS
+// ------------------------------------------------------------
+
+// ------------------------------------------------------------
+// DISPLAY
+// ------------------------------------------------------------
+
+$display : (
+    block       : block,
+    inline-block: inline-block,
+    inline      : inline,
+    table       : table,
+    table-row   : table-row,
+    table-cell  : table-cell,
+    hidden      : none,
+    flex        : flex,
+    inline-flex : inline-flex,
+);
+
+// ------------------------------------------------------------
+// FLOAT
+// ------------------------------------------------------------
+
+$float : (
+    right: right,
+    left: left,
+    none: none,
+);
+
+// ------------------------------------------------------------
+// Z-INDEX
+// ------------------------------------------------------------
+
+$z-index : (
+    z-0    : 0,
+    z-10   : 10,
+    z-20   : 20,
+    z-30   : 30,
+    z-40   : 40,
+    z-50   : 50,
+    z-auto : auto,
+);
+
+// ------------------------------------------------------------
+// SHADOWS
+// ------------------------------------------------------------
+
+// ------------------------------------------------------------
+// TEXT
+// ------------------------------------------------------------
+
+$text-align : (
+    left    : left,
+    right   : right,
+    center  : center,
+    justify : justify,
+    nowrap  : nowrap,
+);
+
+$text-vertical-align : (
+    baseline    : baseline,
+    top         : top,
+    middle      : middle,
+    bottom      : bottom,
+    text-top    : text-top,
+    text-bottom : text-bottom,
+);
+
+$text-transform : (
+    lowercase  : lowercase,
+    uppercase  : uppercase,
+    capitalize : capitalize,
+    normal     : normal,
+);
+
+$text-decoration : (
+    underline     :underline,
+    line-through  :line-through,
+    no-underline  :none,
+);
+
+// ------------------------------------------------------------
+// LINE-HEIGHT
+// ------------------------------------------------------------
+
+$line-height: (
+    none   :1,
+    tight  :1.25,
+    normal :1.5,
+    loose  :2,
+);
+
+// ------------------------------------------------------------
+// FONTS
+// ------------------------------------------------------------
+
+$font-size : (
+    tiny:    12px,
+    small:   14px,
+    medium:  16px,
+    large:   22px,
+    xlarge:  24px,
+    xxlarge: 26px,
+);
+
+$font-family : (
+    sans    : "system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+    serif   : "Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif",
+    mono    : "Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace",
+    sistema : "Arial",
+);
+
+$font-weight : (
+    hairline  :100,
+    thin      :200,
+    light     :300,
+    normal    :400,
+    medium    :500,
+    semibold  :600,
+    bold      :700,
+    extrabold :800,
+    black     :900,
+);
+
+$font-style : (
+    normal  :normal,
+    italic  :italic,
+);
+

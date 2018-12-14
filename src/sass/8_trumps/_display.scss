@@ -1,0 +1,20 @@
+
+
+/* --------------------------------------------------------------- */
+/* DISPLAY */
+/* --------------------------------------------------------------- */
+@if($generate-class-display){
+  @each $key, $value in $display {
+    .display-#{$key}{
+      display: $value;
+    }
+  }
+}
+
+@if($generate-class-display-breakpoints){
+  @each $key, $value in $display {
+    @include responsive('display-'+$key){
+      display: $value;
+    }
+  }
+}

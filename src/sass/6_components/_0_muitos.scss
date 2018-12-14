@@ -1,0 +1,75 @@
+.mensagens-sucesso{
+
+    background: color(night);
+
+    &__lista{
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 30px 0;
+        text-align: left;
+    }
+
+    li{
+        padding: 0 10px 0 37px;
+        padding-bottom: 10px;
+
+        @media(min-width: 768px){
+            padding-left: 44px;
+        }
+
+    }
+
+    &__check{
+        background: url(../images/check-msg-sucesso.png) 10px 10px no-repeat;
+    }
+
+    &__checked{
+        background: url(../images/check-ball.png) 10px 10px no-repeat;
+        background-size: 20px 20px;
+
+        @media(min-width: 768px){
+            background-size: auto;
+            background-position: 0 5px;
+        }
+
+    }
+}
+
+/* -------------------------------------------- */
+
+.page-img-destaque{
+    height: 430px;
+    background: url(../images/topo-passo-a-passo.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.passo{
+
+    &__title{
+        padding-top: 40px;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+    &__lista{
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    li{
+        padding: 0 10px 24px 49px;
+        font-size: 19px;
+        background: url(../images/check-blood.png) 10px 4px no-repeat;
+    }
+
+    &__obs{
+        max-width: 695px;
+        margin-bottom: 80px;
+        line-height: 1.4;
+        font-size: 19px;
+    }
+
+}

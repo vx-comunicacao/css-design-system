@@ -1,0 +1,98 @@
+
+ /* Remove inner padding and border in Firefox 4+. */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* height 30px */
+.btn{
+    padding: $btn-padding;
+    display: inline-block;
+
+    vertical-align: middle;
+
+    text-align:      center;
+    text-decoration: none;
+    text-overflow:   ellipsis;
+
+    @include ff(sistema);
+    @include fs(medium);
+    @include fw(normal);
+    line-height: 14px;
+
+    @include color(_white);
+
+    background-color: color(primary);
+    border: 2px solid color(primary);
+    cursor: pointer;
+
+    -webkit-touch-callout: none;
+       -moz-touch-callout: none;
+            touch-callout: none;
+
+    @include border-radius($btn-border-radius);
+
+    transition: all 0.1s ease-in-out;
+
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        opacity: .9;
+    }
+
+    /* ---------- SIZES ---------- */
+    &.is-big{ @include makeBtnSize(15px 16px, 16px, 16px); }
+    &.is-mini{ @include makeBtnSize(10px, 12px, 1.5); }
+
+    /* ---------- COLORS ---------- */
+    &.is-primary{ @include makeBtnColor( color(primary), #fff, color(primary) ) }
+    &.is-danger{  @include makeBtnColor( color(danger), #fff, color(danger) ) }
+    &.is-success{ @include makeBtnColor( color(success), #fff, color(success) ) }
+
+    /* ----------- STYLES ---------- */
+    &.is-ghost{
+
+        &.is-primary{
+            @include makeBtnColor( transparent, color(primary), color(primary) )
+        }
+
+        &.is-primary:hover{
+            @include makeBtnColor( color(primary), #fff, color(primary) )
+        }
+
+        &.is-danger{
+            @include makeBtnColor( transparent, color(danger), color(danger) )
+        }
+
+        &.is-danger:hover{
+            @include makeBtnColor( color(danger), #fff, color(danger) )
+        }
+
+        &.is-success{
+            @include makeBtnColor( transparent, color(success), color(success) )
+        }
+
+        &.is-success:hover{
+            @include makeBtnColor( color(success), #fff, color(success) )
+        }
+    }
+
+    &.is-round{
+        @include border-radius(25px);
+
+        &.is-big{
+            @include border-radius(40px);
+        }
+    }
+
+    &.is-block{
+        width: 100%;
+        display: block;
+    }
+}
+
+a.btn{
+    text-decoration: none;
+}
+

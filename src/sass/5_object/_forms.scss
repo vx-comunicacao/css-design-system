@@ -1,0 +1,101 @@
+
+/* --------------------------------------------------------------------------- */
+/* FORMS */
+/* --------------------------------------------------------------------------- */
+
+.form-control{
+    width: 100%;
+    height: $input-height;
+    padding: $input-padding;
+    border: $input-border;
+
+    font-size: $input-font-size;
+    font-weight: $input-font-weight;
+
+    vertical-align: bottom;
+    outline: transparent;
+
+    background-color: $input-background-color;
+
+    @include placeholder-color($input-font-placeholder-color);
+
+    @include border-radius($input-border-radius);
+}
+
+.form-control{
+    &.is-round{
+        padding-left: 20px;
+        padding-right: 20px;
+        @include border-radius(25px);
+    }
+
+    &.is-clean{
+        border: 1px solid color(clean) ;
+        @include bg-color(clean) ;
+    }
+
+    &.has-border{
+        border: 1px solid color(clean) ;
+    }
+}
+
+textarea.form-control{
+    height: auto;
+    padding: $input-text-area-padding;
+}
+
+label {
+    max-width: 100%;
+    margin-bottom: 8px;
+    display: inline-block;
+    font-size: $label-font-size;
+    color: $label-color;
+}
+
+/* ---------- RADIO e CHECKBOX ---------- */
+.checkbox, .radio {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.checkbox label, .radio label {
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.checkbox input[type=checkbox],
+.radio input[type=radio],
+.checkbox-inline,
+.radio-inline{
+    margin-left: -20px;
+    vertical-align: middle;
+}
+
+.checkbox-inline, .radio-inline {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 0;
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 13px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+/* ---------- GROUP ---------- */
+.form-group { margin-bottom: $form-group-margin-bottom; }
+
+/* ---------- INLINE ---------- */
+/* VERIFICAR NO MOBILE RESPONSIVO */
+.form-control {
+    display: inline-block;
+    vertical-align: middle;
+}

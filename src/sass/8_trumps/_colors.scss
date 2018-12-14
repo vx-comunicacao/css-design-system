@@ -1,0 +1,40 @@
+
+
+/* --------------------------------------------------------------- */
+/* BACKGROUNDS */
+/* --------------------------------------------------------------- */
+@if($generate-class-bg-colors){
+  @each $key, $value in $colors {
+    .bg-#{$key}{
+      background-color: $value;
+    }
+  }
+}
+
+@if($generate-class-bg-colors-breakpoints){
+  @each $key, $value in $colors {
+    @include responsive('bg-'+$key){
+      background-color: $value;
+    }
+  }
+}
+
+/* --------------------------------------------------------------- */
+/* FONT-COLORS */
+/* --------------------------------------------------------------- */
+
+@if($generate-class-colors){
+  @each $key, $value in $colors {
+    .color-#{$key}{
+      color: $value;
+    }
+  }
+}
+
+@if($generate-class-colors-breakpoints){
+  @each $key, $value in $colors {
+    @include responsive('color-'+$key){
+      color: $value;
+    }
+  }
+}

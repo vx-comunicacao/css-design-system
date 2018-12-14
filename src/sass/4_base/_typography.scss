@@ -1,0 +1,70 @@
+
+/* --------------------------------------------------------------------------- */
+/* TIPOGRAFIA */
+/* --------------------------------------------------------------------------- */
+
+html {
+    @include ff('pt');
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+    @include ff('pt');
+    font-size: fs('small');
+    color: color('white_');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+h1{
+    margin-bottom: 24px;
+    @include fs('jumbo');
+}
+h2{
+    margin-bottom: 22px;
+    @include fs('xxlarge');
+}
+h3{
+    margin-bottom: 20px;
+    @include fs('xlarge');
+}
+h4{
+    margin-bottom: 18px;
+    @include fs('large');
+}
+h5{
+    margin-bottom: 16px;
+    @include fs('medium');
+}
+h6{
+    margin-bottom: 14px;
+    @include fs('small');
+}
+
+p{
+    margin-bottom: 15px;
+    line-height: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+

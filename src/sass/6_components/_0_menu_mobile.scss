@@ -1,0 +1,27 @@
+.menu-mobile{
+
+    &__logo{
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        padding: 10px 0;
+        display:block;
+        border-bottom: 1px solid color(blood);
+        @include image-replace("../images/logo-telecine-megapix.png");
+        background-position: 11px 13px;
+        background-size: 179px auto;
+    }
+
+    a{
+        display: block;
+        padding: 20px 16px;
+        color: color(white_);
+        border-bottom: 1px solid color(night, light);
+        &:hover{
+            color: color(white_);
+            background-color: color(blood);
+        }
+
+    }
+
+}

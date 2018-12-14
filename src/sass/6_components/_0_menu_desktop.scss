@@ -1,0 +1,37 @@
+
+@import "../1_settings/_variables.scss";
+@import "../2_tools/functions/font-weight";
+@import "../2_tools/mixins/transitions";
+
+
+.menu-desktop{
+
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+
+    font-weight:  fontWeight('bold');
+
+
+    @media (min-width: 1200px){
+        display: block;
+    }
+
+
+    &__item{
+        display: inline;
+        a{
+            margin: 0 10px;
+            color: color('white_');
+            border-bottom: 2px solid color('transparent_');
+        }
+    }
+
+    &__item:hover,
+    &__item.ative{
+        a{
+            border-bottom: 2px solid color('blood');
+        }
+    }
+}

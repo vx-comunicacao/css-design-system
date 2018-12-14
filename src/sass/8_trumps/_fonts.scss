@@ -1,0 +1,88 @@
+
+/* --------------------------------------------------------------- */
+/* FONT-SIZE */
+/* --------------------------------------------------------------- */
+
+@if($generate-class-font-size){
+
+  // GERA AS CLASSES
+  @each $key, $value in $font-size {
+    .fs-#{$key}{
+      font-size: $value;
+    }
+  }
+
+}
+
+@if($generate-class-font-size-breakpoints){
+  // GERA AS VARIAÇÕES POR BREAKPOINTS
+  @each $key, $value in $font-size {
+    @include responsive('fs-'+$key){
+      font-size: $value;
+    }
+  }
+}
+
+
+/* --------------------------------------------------------------- */
+/* FONT-FAMILY */
+/* --------------------------------------------------------------- */
+
+@if($generate-class-font-family){
+  @each $key, $value in $font-family {
+    .ff-#{$key}{
+      font-family: unquote($value);
+    }
+  }
+}
+
+@if($generate-class-font-family-breakpoints){
+  @each $key, $value in $font-family {
+    @include responsive('ff-'+$key){
+      font-family: unquote($value);
+    }
+  }
+}
+
+
+/* --------------------------------------------------------------- */
+/* FONT-WEIGHT */
+/* --------------------------------------------------------------- */
+
+@if($generate-class-font-weight){
+  @each $key, $value in $font-weight {
+    .fw-#{$key}{
+      font-weight: $value;
+    }
+  }
+}
+
+@if($generate-class-font-weight-breakpoints){
+  @each $key, $value in $font-weight {
+    @include responsive('fw-'+$key){
+      font-weight: $value;
+    }
+  }
+}
+
+/*.teste{
+  @include color(red);
+  @include color(red);
+  @include color(red);
+  @include ff(sans);
+  @include fw(bold);
+  @include fs(tiny);
+  @include p(1);
+  @include m(6);
+}
+
+.teste2{
+  color: color(red);
+  background-color: color(red);
+  font-family: ff(sans);
+  font-weight: fw(bold);
+  font-size: fs(tiny);
+  padding: p(1);
+  margin: m(6) m(5);
+}
+*/

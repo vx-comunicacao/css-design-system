@@ -1,0 +1,7 @@
+@mixin image-replace($imageURL) {
+    background: url($imageURL) no-repeat;
+    background-size: 100% auto;
+    text-indent: -99999px;
+    white-space: nowrap;
+    overflow: hidden;
+}

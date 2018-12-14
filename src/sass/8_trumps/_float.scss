@@ -1,0 +1,20 @@
+
+
+/* --------------------------------------------------------------- */
+/* FLOAT */
+/* --------------------------------------------------------------- */
+@if($generate-class-float){
+  @each $key, $value in $float {
+    .float-#{$key}{
+      float: $value;
+    }
+  }
+}
+
+@if($generate-class-float-breakpoints){
+  @each $key, $value in $float {
+    @include responsive('float-'+$key){
+      float: $value;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+
+@mixin responsive($classe){
+
+    @each $key, $value in $grid-breakpoints {
+        @if($value != 0){
+          @media (min-width: $value) {
+              .#{$key}#{$breakpoint-separator}#{$classe} {
+                  @content
+              }
+          }
+        }
+    }
+}
+
+// ---------------------------------------------------------------
+// EXEMPLO DE USO
+// ---------------------------------------------------------------
+// @include responsive('color-vermelho'){
+//   background-color: red;
+// }

@@ -1,0 +1,60 @@
+
+/* --------------------------------------------------------------- */
+/* PADDING */
+/* --------------------------------------------------------------- */
+
+@if($generate-class-padding){
+  @each $scaleKey, $scaleValue in $spacing {
+    .pd-#{$scaleKey}{ padding: $scaleValue; }
+    .pdt-#{$scaleKey}{ padding-top: $scaleValue; }
+    .pdl-#{$scaleKey}{ padding-left: $scaleValue; }
+    .pdb-#{$scaleKey}{ padding-bottom: $scaleValue; }
+    .pdr-#{$scaleKey}{ padding-right: $scaleValue; }
+  }
+}
+
+@if($generate-class-padding-breakpoints){
+  @each $bkKey, $bkValue in $grid-breakpoints {
+      @if($bkValue != 0){
+          @media (min-width: $bkValue) {
+              @each $scaleKey, $scaleValue in $spacing {
+                @include ddScale( 'pd', $bkKey, $scaleKey){ padding: $scaleValue; }
+                @include ddScale( 'pdt', $bkKey, $scaleKey){ padding-top: $scaleValue; }
+                @include ddScale( 'pdl', $bkKey, $scaleKey){ padding-left: $scaleValue; }
+                @include ddScale( 'pdb', $bkKey, $scaleKey){ padding-bottom: $scaleValue; }
+                @include ddScale( 'pdr', $bkKey, $scaleKey){ padding-right: $scaleValue; }
+              }
+          }
+      }
+  }
+}
+
+/* --------------------------------------------------------------- */
+/* MARGIN */
+/* --------------------------------------------------------------- */
+
+@if($generate-class-margin){
+  @each $scaleKey, $scaleValue in $spacing {
+    .mg-#{$scaleKey}{ margin: $scaleValue; }
+    .mgt-#{$scaleKey}{ margin-top: $scaleValue; }
+    .mgl-#{$scaleKey}{ margin-left: $scaleValue; }
+    .mgb-#{$scaleKey}{ margin-bottom: $scaleValue; }
+    .mgr-#{$scaleKey}{ margin-right: $scaleValue; }
+  }
+}
+
+@if($generate-class-margin-breakpoints){
+  @each $bkKey, $bkValue in $grid-breakpoints {
+      @if($bkValue != 0){
+          @media (min-width: $bkValue) {
+              @each $scaleKey, $scaleValue in $spacing {
+                @include ddScale( 'mg', $bkKey, $scaleKey){ margin: $scaleValue; }
+                @include ddScale( 'mgt', $bkKey, $scaleKey){ margin-top: $scaleValue; }
+                @include ddScale( 'mgl', $bkKey, $scaleKey){ margin-left: $scaleValue; }
+                @include ddScale( 'mgb', $bkKey, $scaleKey){ margin-bottom: $scaleValue; }
+                @include ddScale( 'mgr', $bkKey, $scaleKey){ margin-right: $scaleValue; }
+              }
+          }
+      }
+  }
+}

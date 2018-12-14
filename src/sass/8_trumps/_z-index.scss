@@ -1,0 +1,20 @@
+
+
+/* --------------------------------------------------------------- */
+/* Z-INDEX */
+/* --------------------------------------------------------------- */
+@if($generate-class-z-index){
+  @each $key, $value in $z-index {
+    .#{$key}{
+      z-index: $value;
+    }
+  }
+}
+
+@if($generate-class-z-index-breakpoints){
+  @each $key, $value in $z-index {
+    @include responsive(''+$key){
+      z-index: $value;
+    }
+  }
+}

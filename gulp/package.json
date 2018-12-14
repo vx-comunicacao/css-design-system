@@ -1,0 +1,32 @@
+{
+  "name": "gulp-boilerplate",
+  "version": "2.0.0",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "require-dir": "^1.0.0"
+  },
+  "description": "My boilerplate for front-end projects",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp cssmin && gulp jsmin"
+  },
+  "author": {
+    "name": "Junior",
+    "url": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/junior-escjr/gulp-boilerplate"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.9.3"
+  }
+}

@@ -1,0 +1,12 @@
+
+@mixin makeBtnSize($padding: null, $font-size: null, $line-height: null ){
+  padding: $padding;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin makeBtnColor($bg-color: null, $color: null, $border-color: null){
+  background-color: $bg-color;
+  border-color: $border-color;
+  color: $color;
+}

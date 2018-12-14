@@ -1,0 +1,18 @@
+@mixin transforms($properties, $values){
+  $property: ();
+  $valores: ();
+
+  @for $i from 1 through length($properties) {
+   
+    $value: nth($values, $i);
+    $props: nth($properties, $i);
+
+    $property: join($property, '#{$props}(#{$value})');
+  }
+
+  -moz-transform: #{$property};
+  -webkit-transform: #{$property};
+  -o-transform: #{$property};
+  -ms-transform: #{$property};
+  transform: #{$property};
+}

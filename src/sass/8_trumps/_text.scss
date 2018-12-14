@@ -1,0 +1,78 @@
+
+/* --------------------------------------------------------------- */
+/* TEXT-ALIGN */
+/* --------------------------------------------------------------- */
+
+@if($generate-class-text-align){
+  @each $key, $value in $text-align {
+    .text-#{$key}{
+      text-align: $value;
+    }
+  }
+}
+
+@if($generate-class-text-align-breakpoints){
+  @each $key, $value in $text-align {
+    @include responsive('text-'+$key){
+      text-align: $value;
+    }
+  }
+}
+
+
+@if($generate-class-text-vertical-align){
+  @each $key, $value in $text-vertical-align {
+    .text-vertical-#{$key}{
+      text-vertical-align: $value;
+    }
+  }
+}
+
+@if($generate-class-text-vertical-align-breakpoints){
+  @each $key, $value in $text-vertical-align {
+    @include responsive('text-vertical-'+$key){
+      text-vertical-align: $value;
+    }
+  }
+}
+
+/* --------------------------------------------------------------- */
+/* TEXT-TRANSFORM */
+/* --------------------------------------------------------------- */
+
+@if($generate-class-text-transform){
+  @each $key, $value in $text-transform {
+    .text-#{$key}{
+      text-transform: $value;
+    }
+  }
+}
+
+@if($generate-class-text-transform-breakpoints){
+  @each $key, $value in $text-transform {
+    @include responsive('text-'+$key){
+      text-transform: $value;
+    }
+  }
+}
+
+/* --------------------------------------------------------------- */
+/* TEXT-DECORATION */
+/* --------------------------------------------------------------- */
+@if($generate-class-text-decoration){
+  @each $key, $value in $text-decoration {
+    .text-#{$key}{
+      text-decoration: $value;
+    }
+  }
+}
+
+@if($generate-class-text-decoration-breakpoints){
+  @each $key, $value in $text-decoration {
+    @include responsive('text-'+$key){
+      text-decoration: $value;
+    }
+  }
+}
+
+
