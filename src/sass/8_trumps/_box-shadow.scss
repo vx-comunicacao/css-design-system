@@ -1,0 +1,10 @@
+
+/* --------------------------------------------------------------- */
+/* border-radius */
+/* --------------------------------------------------------------- */
+
+@if($generate-class-box-shadow){
+  @each $scaleKey, $scaleValue in $box-shadow {
+    .shadow-#{$scaleKey}{ box-shadow: unquote($scaleValue); }
+  }
+}

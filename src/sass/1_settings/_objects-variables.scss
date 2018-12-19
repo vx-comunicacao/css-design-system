@@ -1,31 +1,50 @@
 
 
 // SITE
-$bg-color: #fff;
-$body-font-color: #ccc;
-$body-font-family-color: ff(sistema);
+$body-bg-color: color(grey-lighter);
+$body-font-color: color(grey-darkest);
+$body-font-family: ff(sans);
+$body-font-weight: fw(normal);
+$body-line-height: lh(normal);
+
+$link-color: color(primary);
 
 // BUTTONS
-$btn-padding: 4px 15px 4px 15px;
-$btn-border-radius: 3px;
+$btn-padding       : 7px 15px 7px 15px;
+$btn-font-family   : ff(sans);
+$btn-font-size     : ff(medium);
+$btn-font-weight   : fw(normal);
+$btn-text-transform: uppercase;
+$btn-line-height   : lh(normal);
+$btn-vertical-align: top;
+$btn-font-color    : color(grey-darkest);
+$btn-bg-color      : color(grey-light);
+$btn-border        : 2px solid color(grey-light);
+$btn-border-radius : 5px;
+
 
 // FORM
-$input-height: 36px;
-$input-padding:  1px  10px;
-$input-border: 1px solid #ccc;
-$input-font-size: fs(small);
-$input-font-weight: ff(bold);
-$input-background-color: #eee;
-$input-font-placeholder-color: #ccc;
-$input-border-radius: 5px;
 
-$input-text-area-padding: 10px;
+// Input
+$input-height           : 37px;
+$input-padding          : 1px  10px;
+$input-font-size        : fs(tiny);
+$input-font-family      : ff(sans);
+$input-font-weight      : fw(normal);
+$input-placeholder-color: color(grey-dark);
+$input-border-radius    : 5px;
+$input-focus-border     : 1px dashed color(primary);
+$input-focus-transition : all 0.3s ease-in-out;
+$input-border           : 1px solid color(grey);
+$input-background-color : color(grey-lighter);
 
-$label-margin-bottom: 8px;
-$label-font-size: 18px;
-$label-color: #4F4F4F;
+// Textarea
+$input-text-area-padding : 10px;
 
+// Label
+$label-margin-bottom    : 8px;
+$label-font-size        : 18px;
+$label-color            : #4F4F4F;
 
-
-
+//
 $form-group-margin-bottom: 15px

@@ -1,0 +1,10 @@
+
+/* --------------------------------------------------------------- */
+/* border-radius */
+/* --------------------------------------------------------------- */
+
+@if($generate-class-border-radius){
+  @each $scaleKey, $scaleValue in $border-radius {
+    .radius-#{$scaleKey}{ border-radius: $scaleValue; }
+  }
+}

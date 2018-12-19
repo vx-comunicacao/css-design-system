@@ -2,12 +2,12 @@
 @mixin p($item) { padding: p($item); } // PADDING
 @mixin m($item) { margin: m($item); } // MARGIN
 
-@function p( $key, $map : $spacing ){
+@function p( $key, $map : $padding ){
     // $key: unquote($key);
     @return map-get($map, $key);
 }
 
-@function m( $key, $map : $spacing ){
+@function m( $key, $map : $margin ){
     // $key: unquote($key);
     @return map-get($map, $key);
 }

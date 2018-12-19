@@ -2,23 +2,9 @@
 /* UTILITIES */
 /* --------------------------------------------------------------------------- */
 
-
 /* corrige o bug do float */
 .clearfix, .cf  { @include clearfix; }
 
-.affix { position: fixed; }
-
-.img-responsive{
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.img-full{
-  display: block;
-  width: 100%;
-  height: auto;
-}
 
 /* aspect ratio do youtube 16:9 */
 .ratiohd {

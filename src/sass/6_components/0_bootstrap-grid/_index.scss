@@ -3,9 +3,10 @@
 /* GRID */
 /* --------------------------------------------------------------------------- */
 
-@import "_grid_variables.scss";
-@import "mixin/_grid-framework";
-@import "mixin/_grid";
+@import "_grid-variables-control.scss";
+@import "_grid-variables.scss";
+@import "_grid-mixin-framework";
+@import "_grid-mixin";
+@import "_grid-mixin-helpers";
 @import "_grid";
-
 

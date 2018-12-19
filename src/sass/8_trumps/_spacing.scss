@@ -4,7 +4,7 @@
 /* --------------------------------------------------------------- */
 
 @if($generate-class-padding){
-  @each $scaleKey, $scaleValue in $spacing {
+  @each $scaleKey, $scaleValue in $padding {
     .pd-#{$scaleKey}{ padding: $scaleValue; }
     .pdt-#{$scaleKey}{ padding-top: $scaleValue; }
     .pdl-#{$scaleKey}{ padding-left: $scaleValue; }
@@ -17,7 +17,7 @@
   @each $bkKey, $bkValue in $grid-breakpoints {
       @if($bkValue != 0){
           @media (min-width: $bkValue) {
-              @each $scaleKey, $scaleValue in $spacing {
+              @each $scaleKey, $scaleValue in $padding {
                 @include ddScale( 'pd', $bkKey, $scaleKey){ padding: $scaleValue; }
                 @include ddScale( 'pdt', $bkKey, $scaleKey){ padding-top: $scaleValue; }
                 @include ddScale( 'pdl', $bkKey, $scaleKey){ padding-left: $scaleValue; }
@@ -34,7 +34,7 @@
 /* --------------------------------------------------------------- */
 
 @if($generate-class-margin){
-  @each $scaleKey, $scaleValue in $spacing {
+  @each $scaleKey, $scaleValue in $margin {
     .mg-#{$scaleKey}{ margin: $scaleValue; }
     .mgt-#{$scaleKey}{ margin-top: $scaleValue; }
     .mgl-#{$scaleKey}{ margin-left: $scaleValue; }
@@ -47,7 +47,7 @@
   @each $bkKey, $bkValue in $grid-breakpoints {
       @if($bkValue != 0){
           @media (min-width: $bkValue) {
-              @each $scaleKey, $scaleValue in $spacing {
+              @each $scaleKey, $scaleValue in $margin {
                 @include ddScale( 'mg', $bkKey, $scaleKey){ margin: $scaleValue; }
                 @include ddScale( 'mgt', $bkKey, $scaleKey){ margin-top: $scaleValue; }
                 @include ddScale( 'mgl', $bkKey, $scaleKey){ margin-left: $scaleValue; }

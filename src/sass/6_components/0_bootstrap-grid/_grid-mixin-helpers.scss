@@ -1,0 +1,16 @@
+@mixin custom-column($columns, $breakpoint: $break-point-default, $gutter: $grid-gutter-width) {
+  @media (min-width: $breakpoint) {
+    position: relative;
+    min-height: 1px;
+    padding-left:  ($gutter / 2);
+    padding-right: ($gutter / 2);
+    float: left;
+    width: percentage(($columns / $grid-columns));
+  }
+}
+
+
+@mixin equal-column($columns, $breakpoint: $break-point-default, $gutter: $grid-gutter-width) {
+    $columns: $grid-columns/$columns;
+    @include make-grid-column($columns, $breakpoint, $gutter);
+}

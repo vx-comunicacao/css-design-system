@@ -13,19 +13,21 @@ input::-moz-focus-inner {
 
     vertical-align: middle;
 
-    text-align:      center;
-    text-decoration: none;
-    text-overflow:   ellipsis;
+    text-align      : center;
+    text-decoration : none;
+    text-overflow   : ellipsis;
+    text-transform  : $btn-text-transform;
+    vertical-align  : $btn-vertical-align;
 
-    @include ff(sistema);
-    @include fs(medium);
-    @include fw(normal);
-    line-height: 14px;
+    font-family : $btn-font-family;
+    font-size   : $btn-font-size;
+    font-weight : $btn-font-weight;
+    line-height : $btn-line-height;
 
-    @include color(_white);
+    color: $btn-font-color;
 
-    background-color: color(primary);
-    border: 2px solid color(primary);
+    background-color: $btn-bg-color;
+    border: $btn-border;
     cursor: pointer;
 
     -webkit-touch-callout: none;
@@ -42,39 +44,40 @@ input::-moz-focus-inner {
     }
 
     /* ---------- SIZES ---------- */
-    &.is-big{ @include makeBtnSize(15px 16px, 16px, 16px); }
-    &.is-mini{ @include makeBtnSize(10px, 12px, 1.5); }
+    &.is-mini{ @include make-btn-size(3px 8px, 12px, 1.5); }
+    &.is-big{ @include make-btn-size(15px 16px, 16px, 16px); }
+    &.is-extra{ @include make-btn-size(15px 20px , 20px, 26px); }
 
     /* ---------- COLORS ---------- */
-    &.is-primary{ @include makeBtnColor( color(primary), #fff, color(primary) ) }
-    &.is-danger{  @include makeBtnColor( color(danger), #fff, color(danger) ) }
-    &.is-success{ @include makeBtnColor( color(success), #fff, color(success) ) }
+    &.is-primary{ @include make-btn-color( color(primary), #fff, color(primary) ) }
+    &.is-danger{  @include make-btn-color( color(danger), #fff, color(danger) ) }
+    &.is-success{ @include make-btn-color( color(success), #fff, color(success) ) }
 
     /* ----------- STYLES ---------- */
     &.is-ghost{
 
         &.is-primary{
-            @include makeBtnColor( transparent, color(primary), color(primary) )
+            @include make-btn-color( transparent, color(primary), color(primary) )
         }
 
         &.is-primary:hover{
-            @include makeBtnColor( color(primary), #fff, color(primary) )
+            @include make-btn-color( color(primary), #fff, color(primary) )
         }
 
         &.is-danger{
-            @include makeBtnColor( transparent, color(danger), color(danger) )
+            @include make-btn-color( transparent, color(danger), color(danger) )
         }
 
         &.is-danger:hover{
-            @include makeBtnColor( color(danger), #fff, color(danger) )
+            @include make-btn-color( color(danger), #fff, color(danger) )
         }
 
         &.is-success{
-            @include makeBtnColor( transparent, color(success), color(success) )
+            @include make-btn-color( transparent, color(success), color(success) )
         }
 
         &.is-success:hover{
-            @include makeBtnColor( color(success), #fff, color(success) )
+            @include make-btn-color( color(success), #fff, color(success) )
         }
     }
 
@@ -83,6 +86,10 @@ input::-moz-focus-inner {
 
         &.is-big{
             @include border-radius(40px);
+        }
+
+        &.is-extra{
+            @include border-radius(60px);
         }
     }
 

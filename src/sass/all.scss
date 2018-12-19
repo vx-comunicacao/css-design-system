@@ -1,52 +1,39 @@
 
 
-@import "2_tools/color";
-@import "2_tools/font";
-@import "2_tools/spacing";
-@import "2_tools/btn";
+@import "2_tools/color";        /* COLOR   : MIXINS - FUNCTIONS - PLACEHODERS */
+@import "2_tools/font";         /* FONT    : MIXINS - FUNCTIONS - PLACEHODERS */
+@import "2_tools/spacing";      /* SPACING : MIXINS - FUNCTIONS - PLACEHODERS */
+@import "2_tools/btn";          /* BUTTONS : MIXINS - FUNCTIONS - PLACEHODERS */
 
-// Core variables and mixins
-@import "1_settings/control";
-@import "1_settings/variables";
-@import "1_settings/scales";
-@import "1_settings/_objects-variables";
+@import "1_settings/control";            /* VARIABLES THAT CONTROL IF SOME PARTES WILL BE PROCESSED */
+@import "1_settings/variables";          /* GLOBAL VARIABLES */
+@import "1_settings/scales";             /*  */
+@import "1_settings/_objects-variables"; /* VARIABLES THAT CONFIGURE OBJECTS */
 
-@import "2_tools/functions/index_functions";
-@import "2_tools/mixins/index_mixins";
-@import "2_tools/placeholders/index_placeholders";
+@import "2_tools/functions/index_functions";        /* GLOBAL FUNCTIONS */
+@import "2_tools/mixins/index_mixins";              /* GLOBAL MIXINS */
+@import "2_tools/placeholders/index_placeholders";  /* GLOBAL PLACEHOLDERS */
 
-@import "3_generic/generic";
-@import "3_generic/fonts";
+@import "3_generic/generic";    /* FORMAT GENERICS(*) */
+@import "3_generic/fonts";      /* ADD FONT CONFIGURATION */
 
-@import "4_base/reset";
-@import "4_base/base";
-// @import "4_base/typography";
+@import "4_base/reset";         /* RESET TAGS */
+@import "4_base/typography";    /* FORMAT TEXT TAGS */
 
-@import "5_object/buttons";
-@import "5_object/forms.scss";
+@import "5_object/buttons";     /* FORMAT BUTTONS */
+@import "5_object/forms";       /* FORMAT FORM */
+@import "5_object/tables";      /* FORMAT TABLES */
+@import "5_object/images";      /* FORMAT IMAGES */
 
-// @import "6_components/0_vendor/bootstrap/grid/index";
-// @import "6_components/0_vendor/remodal/remodal";
-// @import "6_components/0_vendor/remodal/remodal-default-theme";
-// @import "6_components/0_messages";
-// @import "6_components/0_panel";
-// @import "6_components/0_hamburguer.scss";
-// @import "6_components/0_menu_mobile.scss";
-// @import "6_components/0_menu_desktop.scss";
-// @import "6_components/0_slide.scss";
-// @import "6_components/0_lista-filme.scss";
-// @import "6_components/0_filme-cover.scss";
-// @import "6_components/0_filme-info.scss";
-// @import "6_components/0_muitos.scss";
-// @import "6_components/1_drawer.scss";
-// @import "6_components/1_inscricao";
-// @import "6_components/2_header.scss";
+/* GRIG COMPONENT BOOTSTRAP BASED */
+@import "6_components/0_bootstrap-grid/index";
+@import "6_components/0_separator";
 
+/* JUST TEST */
+@import "6_components/site";
 
-
-// @import "8_trumps/spacing.scss";
-// @import "8_trumps/responsive.scss";
-// @import "8_trumps/utilities.scss";
+/* HELPERS */
+@import "8_trumps/utilities.scss";
 
 @import "8_trumps/colors.scss";
 @import "8_trumps/spacing.scss";
@@ -57,9 +44,7 @@
 @import "8_trumps/visibility.scss";
 @import "8_trumps/z-index.scss";
 @import "8_trumps/line-height.scss";
-
-
-//@import "9_test/gerador.scss";
-//@import "9_test/teste.scss";
+@import "8_trumps/border-radius.scss";
+@import "8_trumps/box-shadow.scss";
 
 

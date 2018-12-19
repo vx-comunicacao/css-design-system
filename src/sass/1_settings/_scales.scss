@@ -7,7 +7,7 @@ $grid-breakpoints: (
     xs: 0,
     sm: 576px,
     md: 600px,
-    lg: 600px,
+    lg: 1200px,
 );
 
 // ------------------------------------------------------------
@@ -15,20 +15,34 @@ $grid-breakpoints: (
 // ------------------------------------------------------------
 
 $colors: (
-    _white: #fff,
-    primary: #0069d9,
-    danger: #dc3545,
-    success: #28a745,
-    clean:#f1f1f1,
-    red:  red,
-    blue: blue,
+    snow        : $color-snow,
+    grey        : $color-grey,
+    grey-lighter: $color-grey-lighter,
+    grey-light  : $color-grey-light,
+    grey-dark   : $color-grey-dark,
+    grey-darkest: $color-grey-darkest,
+    primary     : $color-primary,
+    success     : $color-success,
+    warning     : $color-warning,
+    danger      : $color-danger,
 );
 
 // ------------------------------------------------------------
 // SPACING
 // ------------------------------------------------------------
 
-$spacing: (
+$margin: (
+    0: 0,
+    1: 1px,
+    2: 5px,
+    3: 10px,
+    4: 15px,
+    5: 20px,
+    6: 30px,
+);
+
+$padding: (
+    0: 0,
     1: 1px,
     2: 5px,
     3: 10px,
@@ -45,13 +59,6 @@ $visibility : (
     invisible: hidden,
 );
 
-// ------------------------------------------------------------
-// BORDER
-// ------------------------------------------------------------
-
-// ------------------------------------------------------------
-// BORDER-RADIUS
-// ------------------------------------------------------------
 
 // ------------------------------------------------------------
 // DISPLAY
@@ -94,8 +101,39 @@ $z-index : (
 );
 
 // ------------------------------------------------------------
-// SHADOWS
+// BORDER
 // ------------------------------------------------------------
+
+// ------------------------------------------------------------
+// BORDER-RADIUS
+// ------------------------------------------------------------
+
+$border-radius: (
+    0: 0,
+    1: 3px,
+    2: 6px,
+    3: 9px,
+    4: 15px,
+    5: 20px,
+    6: 30px,
+);
+
+
+// ------------------------------------------------------------
+// BOX-SHADOW
+// ------------------------------------------------------------
+
+$box-shadow: (
+    default  : '0 2px 4px 0 rgba(0,0,0,0.10)',
+    'md'     : '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
+    'lg'     : '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
+    'inner'  : 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
+    'outline': '0 0 0 3px rgba(52,144,220,0.5)',
+    '1'      : '0 2px 4px rgba(0,0,0,0.05)',
+    '2'      : '0 4px 8px rgba(0,0,0,0.1)',
+    '3'      : '0 8px 16px rgba(0,0,0,0.15)',
+    'none'   : 'none',
+);
 
 // ------------------------------------------------------------
 // TEXT
@@ -147,19 +185,18 @@ $line-height: (
 // ------------------------------------------------------------
 
 $font-size : (
-    tiny:    12px,
-    small:   14px,
-    medium:  16px,
+    tiny:    16px,
+    small:   18px,
+    medium:  20px,
     large:   22px,
     xlarge:  24px,
     xxlarge: 26px,
 );
 
 $font-family : (
-    sans    : "system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
-    serif   : "Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif",
+    sans    : 'sans-serif',
+    serif   : "Georgia, serif",
     mono    : "Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace",
-    sistema : "Arial",
 );
 
 $font-weight : (
