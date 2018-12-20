@@ -1,5 +1,4 @@
 
-
 @import "2_tools/color";        /* COLOR   : MIXINS - FUNCTIONS - PLACEHODERS */
 @import "2_tools/font";         /* FONT    : MIXINS - FUNCTIONS - PLACEHODERS */
 @import "2_tools/spacing";      /* SPACING : MIXINS - FUNCTIONS - PLACEHODERS */
@@ -32,18 +31,17 @@
 @import "6_components/site";
 
 /* HELPERS */
-@import "8_trumps/utilities.scss";
-
-@import "8_trumps/colors.scss";
-@import "8_trumps/spacing.scss";
-@import "8_trumps/fonts.scss";
-@import "8_trumps/text.scss";
-@import "8_trumps/display.scss";
-@import "8_trumps/float.scss";
-@import "8_trumps/visibility.scss";
-@import "8_trumps/z-index.scss";
-@import "8_trumps/line-height.scss";
-@import "8_trumps/border-radius.scss";
-@import "8_trumps/box-shadow.scss";
+@import "7_trumps/utilities.scss";
+@import "7_trumps/colors.scss";
+@import "7_trumps/spacing.scss";
+@import "7_trumps/fonts.scss";
+@import "7_trumps/text.scss";
+@import "7_trumps/display.scss";
+@import "7_trumps/float.scss";
+@import "7_trumps/visibility.scss";
+@import "7_trumps/z-index.scss";
+@import "7_trumps/line-height.scss";
+@import "7_trumps/border-radius.scss";
+@import "7_trumps/box-shadow.scss";
 
 
