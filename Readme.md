@@ -3,7 +3,8 @@ Uma especificação de folha de estilo, para que seja possível a partir de sua 
 
 
 ### Baseado em:
-ITCSS
-Modificadores: is- e has-
-Utilitários
-Escalas de valores
+* ITCSS
+* Modificadores: is- e has-
+* Utilitários
+* Escalas de valores
+* componentes configuráveis e reutiizáveis
