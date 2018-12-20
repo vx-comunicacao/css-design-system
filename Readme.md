@@ -8,3 +8,19 @@ Uma especificação de folha de estilo, para que seja possível a partir de sua 
 * Utilitários
 * Escalas de valores
 * componentes configuráveis e reutiizáveis
+
+
+## Modificadores
+Usando o exemplo de classe do bootstrap .btn:
+
+.btn define o botão padrão
+.btn .btn-primary modificamos o botão para azul
+
+
+Aqui
+.btn is-primary define que o botão é azul
+
+Modificadores baseados no Bulma.
+
+
+## Utilitarios
