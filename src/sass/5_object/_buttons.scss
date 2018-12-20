@@ -1,10 +1,18 @@
+// BUTTONS
+$btn-padding       : 7px 15px 7px 15px;
+$btn-font-family   : ff(sans);
+$btn-font-size     : ff(medium);
+$btn-font-weight   : fw(normal);
+$btn-text-transform: uppercase;
+$btn-line-height   : lh(normal);
+$btn-vertical-align: top;
+$btn-font-color    : color(grey-darkest);
+$btn-bg-color      : color(grey-light);
+$btn-border        : 2px solid color(grey-light);
+$btn-border-radius : 5px;
 
- /* Remove inner padding and border in Firefox 4+. */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
+
+
 
 /* height 30px */
 .btn{

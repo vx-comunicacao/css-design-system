@@ -1,4 +1,31 @@
 
+// FORM
+
+// Input
+$input-height           : 37px;
+$input-padding          : 1px  10px;
+$input-font-size        : fs(tiny);
+$input-font-family      : ff(sans);
+$input-font-weight      : fw(normal);
+$input-placeholder-color: color(grey-dark);
+$input-border-radius    : 5px;
+$input-focus-border     : 1px dashed color(primary);
+$input-focus-transition : all 0.3s ease-in-out;
+$input-border           : 1px solid color(grey);
+$input-background-color : color(grey-lighter);
+
+// Textarea
+$input-text-area-padding : 10px;
+
+// Label
+$label-margin-bottom    : 8px;
+$label-font-size        : 18px;
+$label-color            : #4F4F4F;
+
+//
+$form-group-margin-bottom: 15px;
+
+
 /* --------------------------------------------------------------------------- */
 /* FORMS */
 /* --------------------------------------------------------------------------- */
