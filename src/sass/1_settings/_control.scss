@@ -17,15 +17,16 @@ $generate-class-bg-colors-breakpoints: true;
 
 // FONT-SIZE
 $generate-class-font-size: true;
-$generate-class-font-size-breakpoints: false;
+$generate-class-font-size-breakpoints: true;
 
 // FONT-FAMILY
-$generate-class-font-family: true;
+$generate-class-font-family: false;
 $generate-class-font-family-breakpoints: false;
 
 // FONT-WEIGHT
 $generate-class-font-weight: false;
 $generate-class-font-weight-breakpoints: false;
+
 
 // TEXT-ALIGN
 $generate-class-text-align: false;
@@ -44,24 +45,24 @@ $generate-class-text-decoration: false;
 $generate-class-text-decoration-breakpoints: false;
 
 // LINE-HEIGHT
-$generate-class-line-height: false;
-$generate-class-line-height-breakpoints: false;
+$generate-class-line-height: line-height;
+$generate-class-line-height-breakpoints: line-height;
 
 // DISPLAY
 $generate-class-display: false;
 $generate-class-display-breakpoints: false;
 
 // FLOAT
-$generate-class-float: false;
-$generate-class-float-breakpoints: false;
+$generate-class-float: float;
+$generate-class-float-breakpoints: float;
 
 // VISIBILITY
 $generate-class-visibility: false;
 $generate-class-visibility-breakpoints: false;
 
 // Z-INDEX
-$generate-class-z-index: false;
-$generate-class-z-index-breakpoints: false;
+$generate-class-z-index: true;
+$generate-class-z-index-breakpoints: true;
 
 // BORDER-RADIUS
 $generate-class-border-radius: true;

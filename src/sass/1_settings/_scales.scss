@@ -4,7 +4,6 @@
 // ------------------------------------------------------------
 
 $grid-breakpoints: (
-    xs: 0,
     sm: 576px,
     md: 600px,
     lg: 1200px,
@@ -26,6 +25,89 @@ $colors: (
     warning     : $color-warning,
     danger      : $color-danger,
 );
+
+// ------------------------------------------------------------
+// FONTS
+// ------------------------------------------------------------
+
+$font-size : (
+    tiny:    12px,
+    small:   14px,
+    medium:  16px,
+    large:   18px,
+    xlarge:  20px,
+    xxlarge: 22px,
+);
+
+$font-family : (
+    sans    : 'sans-serif',
+    serif   : "Georgia, serif",
+    mono    : "Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace",
+);
+
+$font-weight : (
+    hairline  :100,
+    thin      :200,
+    light     :300,
+    normal    :400,
+    medium    :500,
+    semibold  :600,
+    bold      :700,
+    extrabold :800,
+    black     :900,
+);
+
+$font-style : (
+    normal  :normal,
+    italic  :italic,
+);
+
+// ------------------------------------------------------------
+// TEXT
+// ------------------------------------------------------------
+
+$text-align : (
+    left    : left,
+    right   : right,
+    center  : center,
+    justify : justify,
+    nowrap  : nowrap,
+);
+
+$text-vertical-align : (
+    baseline    : baseline,
+    top         : top,
+    middle      : middle,
+    bottom      : bottom,
+    text-top    : text-top,
+    text-bottom : text-bottom,
+);
+
+$text-transform : (
+    lowercase  : lowercase,
+    uppercase  : uppercase,
+    capitalize : capitalize,
+    normal     : normal,
+);
+
+$text-decoration : (
+    underline     :underline,
+    line-through  :line-through,
+    no-underline  :none,
+);
+
+
+
+// ------------------------------------------------------------
+// FLOAT
+// ------------------------------------------------------------
+
+$float : (
+    right: right,
+    left: left,
+    none: none,
+);
+
 
 // ------------------------------------------------------------
 // SPACING
@@ -77,16 +159,6 @@ $display : (
 );
 
 // ------------------------------------------------------------
-// FLOAT
-// ------------------------------------------------------------
-
-$float : (
-    right: right,
-    left: left,
-    none: none,
-);
-
-// ------------------------------------------------------------
 // Z-INDEX
 // ------------------------------------------------------------
 
@@ -135,39 +207,6 @@ $box-shadow: (
     'none'   : 'none',
 );
 
-// ------------------------------------------------------------
-// TEXT
-// ------------------------------------------------------------
-
-$text-align : (
-    left    : left,
-    right   : right,
-    center  : center,
-    justify : justify,
-    nowrap  : nowrap,
-);
-
-$text-vertical-align : (
-    baseline    : baseline,
-    top         : top,
-    middle      : middle,
-    bottom      : bottom,
-    text-top    : text-top,
-    text-bottom : text-bottom,
-);
-
-$text-transform : (
-    lowercase  : lowercase,
-    uppercase  : uppercase,
-    capitalize : capitalize,
-    normal     : normal,
-);
-
-$text-decoration : (
-    underline     :underline,
-    line-through  :line-through,
-    no-underline  :none,
-);
 
 // ------------------------------------------------------------
 // LINE-HEIGHT
@@ -178,41 +217,5 @@ $line-height: (
     tight  :1.25,
     normal :1.5,
     loose  :2,
-);
-
-// ------------------------------------------------------------
-// FONTS
-// ------------------------------------------------------------
-
-$font-size : (
-    tiny:    16px,
-    small:   18px,
-    medium:  20px,
-    large:   22px,
-    xlarge:  24px,
-    xxlarge: 26px,
-);
-
-$font-family : (
-    sans    : 'sans-serif',
-    serif   : "Georgia, serif",
-    mono    : "Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace",
-);
-
-$font-weight : (
-    hairline  :100,
-    thin      :200,
-    light     :300,
-    normal    :400,
-    medium    :500,
-    semibold  :600,
-    bold      :700,
-    extrabold :800,
-    black     :900,
-);
-
-$font-style : (
-    normal  :normal,
-    italic  :italic,
 );
 

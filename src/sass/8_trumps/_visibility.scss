@@ -12,9 +12,18 @@
 }
 
 @if($generate-class-visibility-breakpoints){
-  @each $key, $value in $visibility {
-    @include responsive('visibility-'+$key){
-      visibility: $value;
+
+    $prefix-class: visibility-;
+    $scale: $visibility;
+
+    @each $keyBp, $valueBp in $grid-breakpoints {
+        @media (min-width: $valueBp) {
+            @each $keyScale, $valueScale in $scale {
+                $classe: $prefix-class + $keyScale;
+                .#{$keyBp}#{$breakpoint-separator}#{$classe} {
+                    visibility: $valueScale;
+                }
+            }
+        }
     }
-  }
 }

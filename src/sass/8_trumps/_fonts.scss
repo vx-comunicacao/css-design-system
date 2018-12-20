@@ -15,14 +15,20 @@
 }
 
 @if($generate-class-font-size-breakpoints){
-  // GERA AS VARIAÇÕES POR BREAKPOINTS
-  @each $key, $value in $font-size {
-    @include responsive('fs-'+$key){
-      font-size: $value;
-    }
-  }
-}
+    $prefix-class: font-size-;
+    $scale: $font-size;
 
+    @each $keyBp, $valueBp in $grid-breakpoints {
+        @media (min-width: $valueBp) {
+            @each $keyScale, $valueScale in $scale {
+                $classe: $prefix-class + $keyScale;
+                .#{$keyBp}#{$breakpoint-separator}#{$classe} {
+                    font-size: $valueScale;
+                }
+            }
+        }
+    }
+}
 
 /* --------------------------------------------------------------- */
 /* FONT-FAMILY */
@@ -37,11 +43,19 @@
 }
 
 @if($generate-class-font-family-breakpoints){
-  @each $key, $value in $font-family {
-    @include responsive('ff-'+$key){
-      font-family: unquote($value);
+    $prefix-class: font-family-;
+    $scale: $font-family;
+
+    @each $keyBp, $valueBp in $grid-breakpoints {
+        @media (min-width: $valueBp) {
+            @each $keyScale, $valueScale in $scale {
+                $classe: $prefix-class + $keyScale;
+                .#{$keyBp}#{$breakpoint-separator}#{$classe} {
+                    font-family: $valueScale;
+                }
+            }
+        }
     }
-  }
 }
 
 
@@ -58,31 +72,17 @@
 }
 
 @if($generate-class-font-weight-breakpoints){
-  @each $key, $value in $font-weight {
-    @include responsive('fw-'+$key){
-      font-weight: $value;
+    $prefix-class: font-weight-;
+    $scale: $font-weight;
+
+    @each $keyBp, $valueBp in $grid-breakpoints {
+        @media (min-width: $valueBp) {
+            @each $keyScale, $valueScale in $scale {
+                $classe: $prefix-class + $keyScale;
+                .#{$keyBp}#{$breakpoint-separator}#{$classe} {
+                    font-weight: $valueScale;
+                }
+            }
+        }
     }
-  }
 }
-
-/*.teste{
-  @include color(red);
-  @include color(red);
-  @include color(red);
-  @include ff(sans);
-  @include fw(bold);
-  @include fs(tiny);
-  @include p(1);
-  @include m(6);
-}
-
-.teste2{
-  color: color(red);
-  background-color: color(red);
-  font-family: ff(sans);
-  font-weight: fw(bold);
-  font-size: fs(tiny);
-  padding: p(1);
-  margin: m(6) m(5);
-}
-*/

@@ -12,9 +12,17 @@
 }
 
 @if($generate-class-float-breakpoints){
-  @each $key, $value in $float {
-    @include responsive('float-'+$key){
-      float: $value;
+    $prefix-class: float-;
+    $scale: $float;
+
+    @each $keyBp, $valueBp in $grid-breakpoints {
+        @media (min-width: $valueBp) {
+            @each $keyScale, $valueScale in $scale {
+                $classe: $prefix-class + $keyScale;
+                .#{$keyBp}#{$breakpoint-separator}#{$classe} {
+                    float: $valueScale;
+                }
+            }
+        }
     }
-  }
 }

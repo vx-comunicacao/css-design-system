@@ -12,12 +12,22 @@
 }
 
 @if($generate-class-text-align-breakpoints){
-  @each $key, $value in $text-align {
-    @include responsive('text-'+$key){
-      text-align: $value;
+    $prefix-class: text-align-;
+    $scale: $text-align;
+
+    @each $keyBp, $valueBp in $grid-breakpoints {
+        @media (min-width: $valueBp) {
+            @each $keyScale, $valueScale in $scale {
+                $classe: $prefix-class + $keyScale;
+                .#{$keyBp}#{$breakpoint-separator}#{$classe} {
+                    text-align: $valueScale;
+                }
+            }
+        }
     }
-  }
 }
+
+
 
 
 @if($generate-class-text-vertical-align){
@@ -29,13 +39,20 @@
 }
 
 @if($generate-class-text-vertical-align-breakpoints){
-  @each $key, $value in $text-vertical-align {
-    @include responsive('text-vertical-'+$key){
-      text-vertical-align: $value;
-    }
-  }
-}
+    $prefix-class: vertical-align-;
+    $scale: $text-vertical-align;
 
+    @each $keyBp, $valueBp in $grid-breakpoints {
+        @media (min-width: $valueBp) {
+            @each $keyScale, $valueScale in $scale {
+                $classe: $prefix-class + $keyScale;
+                .#{$keyBp}#{$breakpoint-separator}#{$classe} {
+                    vertical-align: $valueScale;
+                }
+            }
+        }
+    }
+}
 /* --------------------------------------------------------------- */
 /* TEXT-TRANSFORM */
 /* --------------------------------------------------------------- */
@@ -49,12 +66,24 @@
 }
 
 @if($generate-class-text-transform-breakpoints){
-  @each $key, $value in $text-transform {
-    @include responsive('text-'+$key){
-      text-transform: $value;
+
+    $prefix-class: text-transform-;
+    $scale: $text-transform;
+
+    @each $keyBp, $valueBp in $grid-breakpoints {
+        @media (min-width: $valueBp) {
+            @each $keyScale, $valueScale in $scale {
+                $classe: $prefix-class + $keyScale;
+                .#{$keyBp}#{$breakpoint-separator}#{$classe} {
+                    text-transform: $valueScale;
+                }
+            }
+        }
     }
-  }
+
 }
+
+
 
 /* --------------------------------------------------------------- */
 /* TEXT-DECORATION */
@@ -68,11 +97,20 @@
 }
 
 @if($generate-class-text-decoration-breakpoints){
-  @each $key, $value in $text-decoration {
-    @include responsive('text-'+$key){
-      text-decoration: $value;
+
+    $prefix-class: text-decoration-;
+    $scale: $text-decoration;
+
+    @each $keyBp, $valueBp in $grid-breakpoints {
+        @media (min-width: $valueBp) {
+            @each $keyScale, $valueScale in $scale {
+                $classe: $prefix-class + $keyScale;
+                .#{$keyBp}#{$breakpoint-separator}#{$classe} {
+                    text-decoration: $valueScale;
+                }
+            }
+        }
     }
-  }
 }
 
 

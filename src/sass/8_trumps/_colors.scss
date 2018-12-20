@@ -12,12 +12,24 @@
 }
 
 @if($generate-class-bg-colors-breakpoints){
-  @each $key, $value in $colors {
-    @include responsive('bg-'+$key){
-      background-color: $value;
+
+    $prefix-class: bg-color-;
+    $scale: $colors;
+
+    @each $keyBp, $valueBp in $grid-breakpoints {
+        @media (min-width: $valueBp) {
+            @each $keyScale, $valueScale in $scale {
+                $classe: $prefix-class + $keyScale;
+                .#{$keyBp}#{$breakpoint-separator}#{$classe} {
+                    background-color: $valueScale;
+                }
+            }
+        }
     }
-  }
+
 }
+
+
 
 /* --------------------------------------------------------------- */
 /* FONT-COLORS */
@@ -32,9 +44,20 @@
 }
 
 @if($generate-class-colors-breakpoints){
-  @each $key, $value in $colors {
-    @include responsive('color-'+$key){
-      color: $value;
+
+    $prefix-class: color-;
+    $scale: $colors;
+
+    @each $keyBp, $valueBp in $grid-breakpoints {
+        @media (min-width: $valueBp) {
+            @each $keyScale, $valueScale in $scale {
+                $classe: $prefix-class + $keyScale;
+                .#{$keyBp}#{$breakpoint-separator}#{$classe} {
+                    color: $valueScale;
+                }
+            }
+        }
     }
-  }
+
 }
+
