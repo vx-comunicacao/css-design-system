@@ -50,4 +50,4 @@ para gerar com os breakpoints:
 .sm:text-primary - Somente no breakpoint sm
 .md:text-danger  - Somente no breakpoint md
 
-
+Modificadores baseados no Tailwind.
