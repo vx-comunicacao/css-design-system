@@ -1,11 +1,11 @@
 
 // PADDING
 $generate-class-padding: true;
-$generate-class-padding-breakpoints: false;
+$generate-class-padding-breakpoints: true;
 
 // MARGIN
 $generate-class-margin: true;
-$generate-class-margin-breakpoints: false;
+$generate-class-margin-breakpoints: true;
 
 // COLORS
 $generate-class-colors: true;
@@ -20,45 +20,45 @@ $generate-class-font-size: true;
 $generate-class-font-size-breakpoints: true;
 
 // FONT-FAMILY
-$generate-class-font-family: false;
-$generate-class-font-family-breakpoints: false;
+$generate-class-font-family: true;
+$generate-class-font-family-breakpoints: true;
 
 // FONT-WEIGHT
-$generate-class-font-weight: false;
-$generate-class-font-weight-breakpoints: false;
+$generate-class-font-weight: true;
+$generate-class-font-weight-breakpoints: true;
 
 
 // TEXT-ALIGN
-$generate-class-text-align: false;
-$generate-class-text-align-breakpoints: false;
+$generate-class-text-align: true;
+$generate-class-text-align-breakpoints: true;
 
 // VERTICAL-ALIGN
-$generate-class-text-vertical-align: false;
-$generate-class-text-vertical-align-breakpoints: false;
+$generate-class-text-vertical-align: true;
+$generate-class-text-vertical-align-breakpoints: true;
 
 // TEXT-TRANSFORM
-$generate-class-text-transform: false;
-$generate-class-text-transform-breakpoints: false;
+$generate-class-text-transform: true;
+$generate-class-text-transform-breakpoints: true;
 
 // TEXT-DECORATION
-$generate-class-text-decoration: false;
-$generate-class-text-decoration-breakpoints: false;
+$generate-class-text-decoration: true;
+$generate-class-text-decoration-breakpoints: true;
 
 // LINE-HEIGHT
 $generate-class-line-height: line-height;
 $generate-class-line-height-breakpoints: line-height;
 
 // DISPLAY
-$generate-class-display: false;
-$generate-class-display-breakpoints: false;
+$generate-class-display: true;
+$generate-class-display-breakpoints: true;
 
 // FLOAT
 $generate-class-float: float;
 $generate-class-float-breakpoints: float;
 
 // VISIBILITY
-$generate-class-visibility: false;
-$generate-class-visibility-breakpoints: false;
+$generate-class-visibility: true;
+$generate-class-visibility-breakpoints: true;
 
 // Z-INDEX
 $generate-class-z-index: true;
@@ -66,8 +66,8 @@ $generate-class-z-index-breakpoints: true;
 
 // BORDER-RADIUS
 $generate-class-border-radius: true;
-// $generate-class-border-radius-breakpoints: false;
+// $generate-class-border-radius-breakpoints: true;
 
 // BOX-SHADOW
 $generate-class-box-shadow: true;
-// $generate-class-box-shadow-breakpoints: false;
+// $generate-class-box-shadow-breakpoints: true;
