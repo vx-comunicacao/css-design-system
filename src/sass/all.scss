@@ -1,47 +1,44 @@
+@import "1_settings/control";            /* VARIABLES THAT CONTROL IF SOME PARTES WILL BE PROCESSED */
+@import "1_settings/variables";          /* GLOBAL VARIABLES */
+@import "1_settings/scales";             /*  */
 
 @import "2_tools/color";        /* COLOR   : MIXINS - FUNCTIONS - PLACEHODERS */
 @import "2_tools/font";         /* FONT    : MIXINS - FUNCTIONS - PLACEHODERS */
 @import "2_tools/spacing";      /* SPACING : MIXINS - FUNCTIONS - PLACEHODERS */
 @import "2_tools/btn";          /* BUTTONS : MIXINS - FUNCTIONS - PLACEHODERS */
 
-@import "1_settings/control";            /* VARIABLES THAT CONTROL IF SOME PARTES WILL BE PROCESSED */
-@import "1_settings/variables";          /* GLOBAL VARIABLES */
-@import "1_settings/scales";             /*  */
-
 @import "2_tools/functions/index_functions";        /* GLOBAL FUNCTIONS */
 @import "2_tools/mixins/index_mixins";              /* GLOBAL MIXINS */
 @import "2_tools/placeholders/index_placeholders";  /* GLOBAL PLACEHOLDERS */
 
-@import "3_generic/generic";    /* FORMAT GENERICS(*) */
-@import "3_generic/fonts";      /* ADD FONT CONFIGURATION */
+@import "3_base/fonts";      /* ADD FONT CONFIGURATION */
+@import "3_base/reset";         /* RESET TAGS */
+@import "3_base/typography";    /* FORMAT TEXT TAGS */
 
-@import "4_base/reset";         /* RESET TAGS */
-@import "4_base/typography";    /* FORMAT TEXT TAGS */
-
-@import "5_object/buttons";     /* FORMAT BUTTONS */
-@import "5_object/forms";       /* FORMAT FORM */
-@import "5_object/tables";      /* FORMAT TABLES */
-@import "5_object/images";      /* FORMAT IMAGES */
+@import "4_elements/buttons";     /* FORMAT BUTTONS */
+@import "4_elements/forms";       /* FORMAT FORM */
+@import "4_elements/tables";      /* FORMAT TABLES */
+@import "4_elements/images";      /* FORMAT IMAGES */
 
 /* GRIG COMPONENT BOOTSTRAP BASED */
-@import "6_components/0_bootstrap-grid/index";
-@import "6_components/0_separator";
+@import "5_components/0_bootstrap-grid/index";
+@import "5_components/0_separator";
 
 /* JUST TEST */
-@import "6_components/site";
+@import "5_components/site";
 
 /* HELPERS */
-@import "7_trumps/utilities.scss";
-@import "7_trumps/colors.scss";
-@import "7_trumps/spacing.scss";
-@import "7_trumps/fonts.scss";
-@import "7_trumps/text.scss";
-@import "7_trumps/display.scss";
-@import "7_trumps/float.scss";
-@import "7_trumps/visibility.scss";
-@import "7_trumps/z-index.scss";
-@import "7_trumps/line-height.scss";
-@import "7_trumps/border-radius.scss";
-@import "7_trumps/box-shadow.scss";
+@import "6_helpers/utilities.scss";
+@import "6_helpers/colors.scss";
+@import "6_helpers/spacing.scss";
+@import "6_helpers/fonts.scss";
+@import "6_helpers/text.scss";
+@import "6_helpers/display.scss";
+@import "6_helpers/float.scss";
+@import "6_helpers/visibility.scss";
+@import "6_helpers/z-index.scss";
+@import "6_helpers/line-height.scss";
+@import "6_helpers/border-radius.scss";
+@import "6_helpers/box-shadow.scss";
 
 
